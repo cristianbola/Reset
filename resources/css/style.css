@@ -1,0 +1,1332 @@
+* {
+
+    padding: 0px;
+
+    margin: 0px;
+
+}
+
+
+
+body {
+
+    font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+
+    background: #dee1e3;
+
+}
+
+
+
+/*===================================================
+
+contenedores principales de las paginas barra lateral
+
+===================================================*/
+
+#barra-lateral {
+
+    width: 100%;
+
+    height: 60px;
+
+    background: #f27649;
+
+    position: fixed;
+
+    z-index: 3;
+
+}
+
+
+
+
+
+div img {
+
+    width: 5%;
+
+    height: 150%;
+
+}
+
+div img#logo {
+
+    width: auto;
+
+    height: 150%;
+
+}
+
+
+
+.logor img {
+
+    width: auto;
+
+    height: 150%;
+
+}
+
+
+
+#contenedor-perfil {
+    float: right;
+    width: 45px;
+    height: 45px;
+    margin-top: 6px;
+    border-radius: 50%;
+}
+
+
+
+#contenedor-perfil img {
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+
+
+#demo-menu-lower-right {
+
+    float: right;
+
+    margin-top: 10px;
+
+}
+
+
+
+.mdl-menu__item {
+
+    float: right;
+
+}
+
+
+
+.mdl-menu__item:hover {
+
+    float: right;
+
+    text-decoration: underline;
+
+    color: blue;
+
+
+}
+
+
+/*=======================================================
+
+contenedor principal de las paginas barra vertical
+
+=======================================================*/
+
+#barra-izquierda {
+
+    margin-top: 60px;
+
+    width: 16%;
+
+    height: 100%;
+
+    position: fixed;
+
+}
+
+
+
+.ajustes-contenedores-barra {
+
+    width: 100%;
+
+    height: 33%;
+
+    background: #01a6bd;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+
+}
+
+
+
+#ajustes-texto-barra {
+
+    text-align: center;
+
+    padding-top: 40px;
+
+    font-size: 16px;
+
+    color: #fff;
+
+    font-weight: bold;
+
+}
+
+
+
+.ajustes-texto-barra-dos {
+
+    text-align: center;
+
+    padding-top: 3px;
+
+    font-size: 16px;
+
+    color: #fff;
+
+    font-weight: bold;
+
+}
+
+
+
+.link-paginas {
+
+    text-decoration: none;
+
+    display: block;
+
+    color: #fff;
+
+    margin-top: 10px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+}
+
+
+
+.link-paginas:hover {
+
+    text-decoration: none;
+
+    display: block;
+
+    color: #fff;
+
+    margin-top: 10px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+}
+
+
+
+#campana {
+
+    color: #fff;
+
+    position: absolute;
+
+    left: 70%;
+
+}
+
+
+
+
+
+
+
+/*==========================================
+
+  contenedor de contenido inicio
+
+===========================================*/
+
+#contenedor-contenido-paginas {
+
+    margin-top: 60px;
+
+    margin-left: 16%;
+
+    width: 84%;
+
+    height: auto;
+
+    position: absolute;
+
+}
+
+
+
+#comentarios {
+
+    width: 80%;
+
+    height: auto;
+
+    background: #fff;
+
+    margin-left: 10%;
+
+    margin-top: 2%;
+
+    padding: 4%;
+
+}
+
+
+
+/*==========================================
+
+  contenedor de contenido grupos
+
+===========================================*/
+
+#contenedor-contenido-grupos {
+
+    margin-top: 60px;
+
+    margin-left: 16%;
+
+    width: 84%;
+
+    height: 100%;
+
+    position: fixed;
+
+}
+
+
+
+#foto-portada {
+
+    width: 70.6%;
+
+    height: 15%;
+
+    margin-left: 16%;
+
+    margin-top: 60px;
+
+    background: black;
+
+    position: fixed;
+
+    z-index: 1;
+
+}
+
+#contenedor-pc {
+
+    width: 50%;
+    height: auto;
+
+    background: #fff;
+
+    position: absolute;
+
+    top: 27%;
+
+    margin-left: 26%;
+
+    padding: 1%;
+}
+
+
+
+.fotoP {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#caja-publicar {
+
+    margin: auto 0;
+
+}
+
+
+
+.contenido input[type=submit] {
+
+    width: 110px;
+
+    height: 40px;
+
+    background: #06B7A5;
+
+    border: none;
+
+    border-radius: 5px;
+
+    color: #fff;
+
+    margin-bottom: 15px;
+
+    margin-left: 1%;
+
+}
+
+#botonpublicar:hover {
+    background: rgba(6, 183, 165, 0.73);
+
+}
+
+
+
+.cajacomentarios {
+
+    margin-top: 4%;
+
+}
+
+
+
+#quien {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#quien2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#foto {}
+
+#comen {
+    margin-left: 10%;
+}
+
+#informacion2 {
+
+    margin-left: 10%;
+    margin-top: -10px;
+
+}
+
+
+#informacion {
+    margin-top: 3px;
+
+}
+
+
+#subC {
+    padding: 3%;
+}
+
+.botonR {
+    float: right;
+    margin-right: 45%;
+    width: auto;
+    height: 30px;
+    background: #06B7A5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10%;
+    margin-left: 1%;
+    padding: 1%;
+
+}
+
+.botonR:hover {
+    background: rgba(6, 183, 165, 0.73);
+}
+
+
+
+
+#nombre {
+
+    font-weight: bold;
+
+    color: #000;
+
+    border-radius: 4px;
+
+}
+
+
+
+.tiempo {
+
+    color: #9c9696;
+    font-size: x-small;
+}
+
+
+
+#textoComentario {
+
+    font-size: 16px;
+    border-radius: 5px;
+    color: #000;
+
+
+}
+
+
+
+#textoComentario2 {
+    font-size: 16px;
+    margin-left: 10%;
+    margin-top: 10px;
+
+}
+
+
+.botoneliminar {
+    float: right;
+    margin-top: -47px;
+    color: #fff;
+    background: #06B7A5;
+    border-radius: 5px;
+    padding: 1px;
+    font-size: x-small;
+}
+
+.botoneliminar:hover {
+    background: rgba(6, 183, 165, 0.73);
+}
+
+
+/*
+
+ ------------------------------------------------------
+
+ -----------contenedor-grupos barra derecha------------
+
+ ------------------------------------------------------
+
+ */
+
+#barra-derecha {
+
+    width: 16%;
+
+    height: 100%;
+
+    background: #01a6bd;
+
+    float: right;
+
+    padding: 10px;
+
+}
+
+
+
+.usuarios-barra-derecha {
+
+    background: #fff;
+
+    height: 85%;
+
+    width: 100%;
+
+    /*    overflow: scroll;*/
+    overflow-y: auto;
+
+    padding-top: 15px;
+
+
+
+}
+
+
+
+#usuarios-titulo {
+
+    text-align: center;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+
+#contenedor-foto-barra {
+
+    width: 35px;
+
+    height: 35px;
+
+    float: right;
+
+}
+
+
+
+.nombres-usuarios {
+
+    font-size: 15px;
+
+    color: #06B7A5;
+
+}
+
+
+
+.nombres-usuarios:hover {
+
+    color: rgba(1, 166, 189, 0.64);
+
+    background: aliceblue;
+
+    border-radius: 4px;
+
+
+
+}
+
+
+
+
+/*==========================================
+
+  contenedor de contenido biblioteca
+
+===========================================*/
+
+#contenedor-contenido-pagina-biblioteca {
+
+    margin-top: 60px;
+
+    margin-left: 16%;
+
+    width: 84%;
+
+    height: auto;
+
+    position: absolute;
+
+    background: #dee1e3;
+
+
+
+}
+
+
+
+#biblio-opciones {
+
+    background: #fff;
+
+    width: 84%;
+
+    height: auto;
+
+    position: fixed;
+
+    padding-left: 3%;
+
+    padding-top: 3%;
+
+    z-index: 2;
+
+}
+
+
+
+.select {
+
+    width: 25%;
+
+    height: 25px;
+
+    font-size: 16px;
+
+}
+
+
+
+.textos-bibliotecas {
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-top: -15px;
+
+}
+
+
+
+#compartir-biblio {
+
+    background: #06B7A5;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    color: white;
+
+}
+
+
+
+#compartir-biblio:hover {
+
+    background: rgba(6, 183, 165, 0.73);
+
+    border-radius: 5px;
+
+    color: white;
+
+}
+
+
+
+#tablas-biblioteca {
+
+    background: #fff;
+
+    width: 100%;
+
+    height: auto;
+
+    position: absolute;
+
+    top: 280px;
+
+    padding: 3%;
+
+}
+
+
+
+table {
+
+    width: 100%;
+
+    height: 40%;
+
+    font-size: 16px;
+
+}
+
+
+
+td,
+
+th {
+
+    border-bottom: 1px solid #06B7A5;
+
+}
+
+
+
+th {
+    background: #06B7A5;
+
+    color: #fff;
+
+    font-size: 20px;
+
+}
+
+
+
+tr:nth-child(even) {
+
+    background-color: #dddddd;
+
+}
+
+
+
+.icono-biblioteca {
+
+    margin-left: 43%;
+
+}
+
+
+
+.icono-biblioteca:hover {
+
+    margin-left: 43%;
+    color: blue;
+
+}
+
+#contenedor-buscador {
+    margin-left: 65%;
+    margin-top: -285px;
+    width: 30%;
+    height: auto;
+    position: absolute;
+}
+
+#select-buscar {
+    width: 83%;
+    height: 30px;
+    font-size: 16px;
+}
+
+#boton-buscar {
+    color: #687075fc;
+    position: absolute;
+}
+
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+}
+
+
+/*==========================================
+
+  texto link
+
+===========================================*/
+
+#ajustea {
+
+    text-decoration: none;
+
+    list-style: none;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    display: inline-block;
+
+    margin-left: 20%;
+
+}
+
+
+
+#ajustea:hover {
+
+    font-size: 15px;
+
+
+}
+
+
+
+
+
+
+
+/*==========================================
+
+  contenedor de contenido perfil
+
+===========================================*/
+
+#contenedor-contenido-pagina-perfil {
+
+    margin-top: 60px;
+    margin-left: 16%;
+    width: 84%;
+    height: 100%;
+    position: absolute;
+    background: #dee1e3;
+
+}
+
+
+
+#pagina-perfil {
+
+    width: auto;
+
+    height: auto;
+
+    background: #dee1e3;
+
+}
+
+
+
+#cambiar-perfil {
+    background: #dee1e3;
+    padding: 3%;
+    height: auto;
+
+}
+
+
+
+#contenedor-foto-pagina-perfil {
+
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+    border-radius: 50%;
+
+
+}
+
+
+
+#contenedor-foto-pagina-perfil img {
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+
+.parrafo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15%;
+    background: aliceblue;
+}
+
+
+.datos {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.negrita-text {
+
+    font-weight: bold;
+
+}
+
+#boton-actulizar2 {
+
+    background: #06B7A5;
+    padding: 1%;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+#boton-actulizar2:hover {
+
+    background: rgba(6, 183, 165, 0.73);
+
+    border-radius: 5px;
+
+    color: white;
+
+}
+
+
+
+#parrafo2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#informacion-perfil {
+    margin-left: -80px;
+    margin-top: -40px;
+
+}
+
+#boton-actulizar-registros {
+    position: absolute;
+    background: #06B7A5;
+    margin-left: 40.5%;
+    margin-top: 7px;
+    padding: 1%;
+    width: auto;
+    border-radius: 5px;
+    color: white;
+}
+
+#boton-actulizar-registros:hover {
+    background: rgba(6, 183, 165, 0.73);
+}
+
+
+.input-modal {
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+/*==========================================
+ ventana modal perfil mensajeria
+===========================================*/
+
+#ventana-mensajeria {
+    width: 84%;
+    height: 91%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    position: fixed;
+    margin-top: 60px;
+    margin-left: 16%;
+
+}
+
+#ventana-mensajeria2 {
+    background: #fff;
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin-left: 70%;
+    overflow-y: auto;
+}
+
+.mensajeria {
+    width: 100%;
+    min-height: 14%;
+    background: #fff;
+        border-bottom: 1px solid #00000063;
+}
+
+.confirman-mensaje {
+    margin-left: 72%;
+    margin-top: -40px;
+    font-size: 8px;
+
+}
+
+.nombre-usuario-inbox {
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+#contendor-perfil-modal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 3%;
+}
+
+.contenedor-mensaje-modal {
+    width: 70%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: -40px;
+    background: #3131312e;
+    border-radius: 5px;
+
+}
+
+/*==========================================
+    Pagina inbox
+===========================================*/
+
+#contenedor-contenido-inbox {
+    margin-top: 60px;
+    margin-left: 16%;
+    width: 84%;
+    height: 100%;
+    position: absolute;
+    background: #dee1e3;
+}
+
+#ventana-mensajeria-inbox {
+    background: #fff;
+    width:  19%;
+    height: 100%;
+    overflow: auto;
+    position: fixed
+}
+
+#ventana-inbox {
+    width: 76.2%;
+    height: 15%;
+    background: #dee1e3;
+    margin-left: 23.8%;
+    margin-top: 30px;
+
+}
+
+.mensajes-usuarios {
+    width: 100%;
+    height: auto;
+    background: #dee1e3;
+   
+}
+
+.inbox-usuario-entrada {
+    background: #01a6bd5e;
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+    border-radius: 20px;
+    padding: 8px;
+    display: inline-block;
+
+}
+
+.inbox-usuario-salida {
+    background: #f276499c;
+    width: 30%;
+    height: auto;
+    margin-left: 66%;
+    border-radius: 20px;
+    padding: 8px;
+    display: inline-block;
+
+}
+
+.contenedor-mensaje-modal-inbox {
+    width: 70%;
+    height: 50%;
+    margin-left: 5%;
+    margin-top: -15px;
+}
+
+#contenedor-eniviar-mensaje{
+    width: 100%;
+    height: 20%;
+    background: #01a6bd;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+#text-eniviar-mensaje{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#icono-enviar-mensaje{
+    margin-left: 92%;
+    margin-top: -35px;
+    position: absolute;
+}
+
+/*==========================================
+ ventana modal perfil
+===========================================*/
+
+#ventana1 {
+    width: 84%;
+    height: auto;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    margin-top: 60px;
+    margin-left: 16%;
+    background: #313131;
+    opacity: .95;
+}
+
+
+#ventana2 {
+    background: #313131;
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-left: 16%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: -180px
+}
+
+.botones-ventana {
+    background: #06B7A5;
+    padding: 1%;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+
+}
+
+.botones-ventana:hover {
+    background: rgba(6, 183, 165, 0.73);
+}
+
+
+
+
+/*==========================================
+
+  contenedor de contenido politicas
+
+===========================================*/
+
+#contenedor-contenido-politicas {
+
+    margin-top: 60px;
+
+    margin-left: 16%;
+
+    width: 84%;
+
+    height: auto;
+
+    position: absolute;
+
+    background: #fff;
+
+    padding: 40px;
+
+}
+
+
+
+.sub-politicas {
+
+    font-weight: bold;
+}
+
+
+
+.titulo-politicas {
+
+    text-align: center;
+
+}
+
+
+
+#texto-politica {
+
+    font-size: 20px;
+
+}
+
+
+
+
+
+/*==========================================
+
+  contenedor de contenido condiciones
+
+===========================================*/
+
+#contenedor-contenido-condiciones {
+
+    margin-top: 60px;
+
+    margin-left: 16%;
+
+    width: 84%;
+
+    height: 100%;
+
+    position: absolute;
+
+    background: #dee1e3;
+
+}
+
+/*----------------------------------------------
+CSS de mensajes
+------------------------------------------------*/
+
+#abc {
+    width: 100%;
+    height: 100%;
+    opacity: .95;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+    background-color: #313131;
+    overflow: auto
+}
+
+div#popupContact {
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    margin-left: -202px;
+
+}
+
+#submit {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: #01a6bd;
+    color: #fff;
+    border: 1px solid #9a988f;
+    padding: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+button {
+    width: 10%;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #01a6bd;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form#msj {
+    max-width: 300px;
+    min-width: 250px;
+    padding: 10px 50px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+input[type=text] {
+    width: 82%;
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding-left: 40px;
+    font-size: 16px;
+
+}
+
+img#close {
+    position: absolute;
+    right: -14px;
+    top: -14px;
+    cursor: pointer;
+    height: 5%;
+
+}
+
+
+
+textarea#txtMsj {
+    background-image: url(../img/icon/msg.png);
+    background-repeat: no-repeat;
+    background-position: 5px 7px;
+    width: 82%;
+    height: 95px;
+    padding: 10px;
+    resize: none;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding-left: 40px;
+    font-size: 16px;
+    margin-bottom: 30px
+}

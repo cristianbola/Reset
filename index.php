@@ -1,0 +1,363 @@
+<?php
+session_start();
+if(isset($_SESSION["us_id"])){
+header("Location: resources/inicio.php");
+}
+date_default_timezone_set('America/Bogota');
+require_once 'control/registro.php';
+require_once 'control/gets.php';
+require_once 'control/sets.php';
+?>
+
+    <html class="no-js" lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>reset</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/material.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- css en conflicto --->
+        <link rel="shortcut icon" type="image/x-icon" href="/icono.ico">
+        <!-- link icono-->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/material.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/codigo.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <!-- carga clases -->
+        <?php
+           require_once 'control/registro.php';
+           require_once 'control/gets.php';
+	    ?>
+        </head>
+         <body>
+
+        <!--<div class="container">-->
+        <div class="row">
+            <div class="col s12">
+                <div id="cabecera">
+                    <img id="logo1" src="img/logo.png" alt="logo" title="logo de la pagina">
+                    <div id="pregunta_boton">
+                        <h1 id="pregunta">¿Ya tienes una cuenta?</h1>
+                        <button id="boton1" type="button" class="mdl-button mdl-js-button mdl-button--raised waves-effect waves-light btn modal-trigger" href="#modal1">Iniciar Sesión</button>
+					</div>
+
+						
+                        <a href="ofertas.php" style="margin-left: 40%"><h1 id="pregunta" >¡Envia una oferta laboral!</h1></a>
+                        
+						
+
+
+                             <div id="modal1" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div id="Ajustes" class="mdl-shadow--2dp">
+                                    <img  src="img/r.PNG" title="logo reset" alt="Reset" class="circle mdl-shadow--2dp" style = 'margin-left: 40%;'>
+                                    <h2 id="l1">Te damos la bienvenidad a</h2>
+                                    <h2 id="l2">Reset</h2>
+                                    <div id="login">
+                                         <div class="row">
+                                            <div class="col s12">
+                                                <form method="POST" action="index.php">
+                                                     <div class="row">
+                                                         <div class="input-field col s6">
+                                                             <input id="email" type="email" class="validate" name="sEmail">
+                                                             <label for="email">E-Mail</label>
+                                                         </div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div class="input-field col s6">
+                                                             <input id="password" type="password" class="validate" name="sPass">
+                                                             <label for="password">Password</label>
+                                                         </div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div id="envios">
+                                                            <button id="boton2" class="btn waves-effect waves-light" type="submit" name="START">Iniciar
+                                                               <i class="material-icons right">school</i>
+                                                            </button>
+                                                           
+                                                         </div>
+                                                     </div>
+                                                </form>
+                                            </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
+                       <!--  modal olvidaste contraseña -->
+                        <div id="modal2" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div id="Ajustes" class="mdl-shadow--2dp">
+                                    <img  src="img/r.PNG" title="logo reset" alt="Reset" class="circle mdl-shadow--2dp" style = 'margin-left: 40%;'>
+                                    <h2 id="l1">Olvidaste la contraseña</h2>
+                                    <h2 id="l2">Reset</h2>
+                                    <div id="login">
+                                         <div class="row">
+                                            <div class="col s12">
+                                                <form method="POST" action="">
+                                                     <div class="row">
+                                                         <div class="input-field col s6">
+                                                            
+                                                             <input id="email" type="email" class="validate" name="forgotEmail" placeholder="Ingresa el mail de tu cuenta">
+                                                             <label for="email">E-Mail</label>
+                                                         </div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div id="envios">
+                                                            
+                                                            </button>
+                                                            <button id="boton5" class="btn waves-effect waves-light" type="submit" name="forgot">Envia a tu correo
+                                                               <i class="material-icons right">send</i>
+                                                            </button>
+                                                         </div>
+                                                     </div>
+                                                </form>
+                                            </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
+
+<!-- modal empresas -->
+
+						<div id="modal3" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div id="Ajustes" class="mdl-shadow--2dp">
+                                    <img  src="img/r.PNG" title="logo reset" alt="Reset" class="circle mdl-shadow--2dp" style = 'margin-left: 40%;'>
+                                    <h2 id="l1">Te damos la bienvenidad a</h2>
+                                    <h2 id="l2">Reset para empresas</h2>
+                                    <div id="login">
+                                         <div class="row">
+                                            <div class="col s12">
+                                                <form method="POST" action="index.php">
+                                                     <div class="row">
+                                                     	<div class="input-field col s6">
+                                                     		<label>Nombre de la empresa</label>
+                                                     		 <input  type="text" class="validate" name="nombreEmp">
+                                                     	</div><br>
+                                                     	
+                                                         <div class="input-field col s6">
+                                                             <input id="email" type="email" class="validate" name="sEmail">
+                                                             <label for="email">E-Mail</label>
+                                                         </div><br>
+                                                     </div>
+                                                     <div class="input-field col s6">
+                                                     		<label>Telefono de contacto</label>
+                                                     		 <input  type="text" class="validate" name="nombreEmp">
+                                                     	</div><br>
+                                                     <div class="row">
+                                                         <div class="input-field col s6">
+                                                         	<label>Describe la oferta</label>
+                                                             <input type="text" name="oferta">
+                                                         </div><br>
+                                                     </div>
+                                                     <div class="input-field col s6">
+                                                     		<label>Selecciona el perfil de la oferta</label>
+                                                     		<select class="form-control" name="grupo">
+                                                     			<option value="">1</option>
+                                                     			<option value="">2</option>
+                                                     		</select>
+                                                     	</div>
+                                                     <div class="row">
+                                                         <div id="envios">
+                                                            <button id="boton2" class="btn waves-effect waves-light" type="submit" name="oferta">Enviar oferta
+                                                               <i class="material-icons right">business</i>
+                                                            </button>
+                                                           
+                                                         </div>
+                                                     </div>
+                                                </form>
+                                            </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                            </div>
+                        </div>
+<!-- 
+fin modal empresas -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <img src="img/foto.jpg" id="portada" class= 'portada' alt="personas compartiendo" title="amigos">
+            </div>
+            <div class="col s6">
+                <div id="formulario">
+                    <form method="POST" action="index.php">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="name" name="name" type="text" class="validate" required>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" name="last_name" type="text" class="validate" required>
+                                <label for="last_name">Apellido</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" name="email" class="validate" required>
+                                <label for="email">E-mail</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Programa</label>
+                            <select class="form-control" id="sel1" name="programa">
+									<?php
+									$user = new gets();
+									$registros=$user->programaUsr();
+									foreach($registros as $registros)
+								   {
+									   echo '<option value="'.$registros['id'].'">'.$registros['nombre'].'</option>';
+									   
+								   }
+								   ?>
+								  </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Curso</label>
+                            <select class="form-control" id="sel1" name="curso">
+									<?php
+									$user = new gets();
+									$registros=$user->cursoUsr();
+									foreach($registros as $registros)
+								   {
+									   echo '<option value="'.$registros['id'].'">'.$registros['nombre'].'</option>';
+									   
+								   }
+								   ?>
+								  </select>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password" name="password" type="password" class="validate" required>
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password_!" name=password2 type="password" class="validate" required>
+                                <label for="password">Repetir Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button id="boton2" class="btn waves-effect waves-light" type="submit" name="OK">REGISTRARSE
+                                <i class="material-icons right">send</i>
+
+                              </button>
+
+                        </div>
+                        <button id="boton3" class="mdl-button mdl-js-button mdl-button--raised waves-effect waves-light btn modal-trigger" href="#modal2" style = 'border-color: rgb(242, 118, 73);margin-left: 10%;'>¿Olvidaste la contraseña?
+                                <i class="material-icons right">report_problem</i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <img id="logo-sena-portada" src="img/logo-sena.png" title="foto sena" alt="logos sena">
+        <script>
+            window.ga = function() {
+                ga.q.push(arguments)
+            };
+            ga.q = [];
+            ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto');
+            ga('send', 'pageview')
+
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <?php
+		//registro usuario
+		if(isset($_POST['OK'])){
+        $var = new gets();
+      if($var->valiSena($_POST['email'])){
+
+      $p1=$_POST['password'];
+      $p2=$_POST['password2'];
+      if($p1==$p2)
+      {
+		
+			$vali=$var->valMail($_POST['email']);
+      
+			if(!$vali){
+		$user = new usuario($_POST['email'],md5($_POST['password']),$_POST['name'],$_POST['last_name'],$_POST['programa'],$_POST['curso']);
+		echo $user->guardar();
+		$user->joinGroup();
+		echo '<script>swal("El usuario '.$_POST['name'].' '.$_POST['last_name'].' ha sido ingresado con exito");</script>';
+			}
+			else{
+				echo 'swal("El email '.$_POST['email'].' '.' Ya existe");</script>';
+			}
+		}
+    else
+    {
+     echo '<script>swal("la verificacion de password no coincide");</script>'; 
+    }
+  }else {echo "<script>swal('Correo no valido, recuerde que el correo debe ser @Misena.edu.co');</script>";}
+  }
+		// iniciar sesion
+		if(isset($_POST['START'])){
+			$var = new gets();
+			$get = $var->valiSesion($_POST['sEmail'],md5($_POST['sPass']));
+			if($get)
+			{
+			        $idU = $get[0];$rol=$get[1];
+                    sets::logSe($idU);
+                    $_SESSION['us_id']=$idU;
+                    $_SESSION['us_rol']=$rol;
+                    echo '<script>swal("Iniciando sesión con exito");</script>';
+					//session_start();
+          echo"<script language='javascript'>window.location='resources/inicio.php'</script>";
+           //header("Location: res/test.php");
+			}
+			else
+			{
+				echo '<script>swal("Usuario o contraseña erronea");</script>';
+			}
+		}
+        if(isset($_POST['forgot'])){
+            $var = new gets();
+            $vali=$var->valMail($_POST['forgotEmail']);
+            if($vali){
+              $idUser=$var->getId($_POST['forgotEmail']);
+              $recover= new sets();$recover->TokenRecover($_POST['forgotEmail'],$idUser);
+                     
+                echo '<script>swal("Verifica el link de recuperacion a tu correo");</script>';
+            }
+            else{
+                echo '<script>swal("No hay ninguna cuenta asociada con este email");</script>';
+            }
+        }
+		?>
+    </body>
+
+    </html>

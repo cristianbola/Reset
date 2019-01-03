@@ -1,0 +1,547 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+	background: #dee1e3;
+}
+
+
+/*
+ ------------------------------------------------------
+ ----------------cabecera de la pagina-----------------
+ ------------------------------------------------------
+ */
+
+#cabecera {
+	width: 100%;
+	height: 60px;
+	background: rgb(242, 118, 73);
+}
+
+#logo1 {
+	width: 90px;
+	height: 90px;
+}
+
+#pregunta_boton {
+	float: right;
+}
+
+#pregunta {
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+	margin-right: -53px;
+}
+
+#boton1 {
+	display: inline-block;
+	margin-right: 50px;
+	background: #06B7A5;
+	margin-left: 60px;
+}
+
+
+/*
+ ------------------------------------------------------
+ ----------------formulario de registro----------------
+ ------------------------------------------------------
+ */
+
+#formulario {
+	width: 60%;
+	height: 60%;
+	float: right;
+	clear: all;
+	margin-right: 200px;
+	margin-top: -10px;
+}
+
+#boton2 {
+    margin-left: 18%;
+    width: auto;
+    height: auto;
+    font-size: 10px;
+}
+
+
+/*
+ ------------------------------------------------------
+ ----------------foto pagina principal portada---------
+ ------------------------------------------------------
+ */
+#portada {
+	margin-left: 10%;
+	margin-top: 20%;
+	
+}
+
+@media handheld, only screen and (max-width: 767px) {
+.portada {
+	
+	display:none;
+}
+}
+
+/*
+ ------------------------------------------------------
+ --------nemu y barra lacteral de contenido.html-------
+ ------------------------------------------------------
+ */
+
+#cabecera-header {
+	width: 100%;
+	height: 60px;
+	background: rgb(242, 118, 73);
+	border-bottom: 1px solid rgba(0, 0, 0, .08);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+	position: fixed;
+	z-index: 3;
+}
+
+#logo2 {
+	width: 90px;
+	height: 90px;
+	position: fixed;
+}
+
+
+/*notificaciones icono*/
+
+#icono-noti {
+	margin-left: 57px;
+	position: absolute;
+	margin-top: -3%;
+	color: white;
+}
+
+#barra {
+	margin-top: 60px;
+	min-width: 16%;
+	height: 100%;
+	display: inline-block;
+	background: #01A6BD;
+	position: fixed;
+	z-index: 2;
+}
+
+.titucontenido {
+	text-align: center;
+	font-size: 16px;
+	color: white;
+}
+
+#grupo {
+	margin-left: 9px;
+}
+
+#biblioteca {
+	margin-left: 9px;
+}
+
+#politica {
+	margin-left: 9px;
+	margin-bottom: 106px;
+}
+
+#ajuste {
+	margin-top: 30%;
+}
+
+#ajuste1 {
+	margin-top: -12%;
+}
+
+#ajuste2 {
+	margin-top: -12%;
+}
+
+#ajuste3 {
+	margin-top: -12%%;
+}
+
+.colores {
+	color: #ffffff;
+}
+
+.dividir {
+	border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+#lateral {
+	float: right;
+	width: 45px;
+	height: 45px;
+	margin-top: 6px;
+}
+
+#opciones {
+	margin-top: 10px;
+	float: right;
+	clear: all;
+}
+
+
+/*
+ ------------------------------------------------------
+ --------DiseÃ±o de publicaciones-------
+ ------------------------------------------------------
+ */
+
+#noticias {
+	/*width: 1146px; */
+	width: 68%;
+	height: 20%;
+	margin-left: 16%;
+	margin-top: 60px;
+	position: fixed;
+	z-index: 10;
+
+}
+
+/*imagen portada*/
+
+#imagen-portada-grupos {
+	/* 	width: 918px;
+	height: 90px; */
+	width: 100%;
+	height: 100%;
+
+}
+
+#titulo-portada {
+	margin-top: -100px;
+	font: bold 50px/1 georgia;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 2px 0 #fff,
+	0 4px 0 #a0b1bf,
+	0 6px 0 #8ca0b2,
+	0 8px 0 #778fa4,
+	3px 8px 15px rgba(0, 0, 0, 0.1),
+	3px 8px 5px rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+}
+
+.formulario-publicaciones {
+	position: absolute;
+	margin-left: 35%;
+	margin-top: 10%;
+	height: 200px;
+}
+
+
+/*
+ ------------------------------------------------------
+ --------DiseÃ±o de publicaciones-------
+ ------------------------------------------------------
+ */
+
+#publicar {
+	margin-top: -50px;
+	/*cristian*/
+	width: 300px;
+	/*    z-index: 0;*/
+	margin-left: -230px;
+	/*cristian*/
+}
+
+.contenido {
+	width: 768px;
+	height: auto;
+	background: #fff;
+}
+
+.contenido input[type=submit] {
+	width: 110px;
+	height: 40px;
+	background: #06B7A5;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	margin-bottom: 15px;
+	/*cristian*/
+}
+
+.contenido input[type=submit]:hover {
+	background: rgba(1, 166, 189, 0.72);
+	/*cristian*/
+}
+
+
+/*
+ ------------------------------------------------------
+ -----DiseÃ±o de respuesta al comentario del usuario----
+ ------------------------------------------------------
+ */
+
+#principal {
+	margin-top: 60px;
+}
+
+.cv {
+	width: 110px;
+	height: 40px;
+	background: #06B7A5;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.cv:hover {
+	background: rgba(6, 183, 165, 0.71);
+	/*cristian*/
+}
+
+#AjusteBoton {
+	margin-left: 10px;
+	margin-top: 10px;
+	position: relative;
+}
+
+#respuesta {}
+
+#comentar {}
+
+
+/*
+ ------------------------------------------------------
+ ----------DiseÃ±o de la pagina de perfil --------------
+ ------------------------------------------------------
+*/
+
+#ContenidoPerfil {
+	width: 60%;
+    height: 70%;
+    background: #fff;
+    margin-top: 9%;
+    position: absolute;
+    margin-left: 28%;
+    padding: 40px;
+}
+
+#imagen {
+	height: 130px;
+	width: 200px;
+	margin-top: 1%;
+	/*background: red;*/
+	margin-left: 40%;
+}
+
+.tamano {
+	height: 150px;
+	width: 150px;
+
+}
+
+#informacion {
+	margin-left: 30%;
+}
+
+.datos1 {
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+.datos {
+	font-size: 16px;
+	margin-top: -40px;
+}
+
+.parrafo {
+	font-size: 20px;
+	margin-top: -30px;
+}
+
+.parrafo1 {
+	font-size: 16px;
+	margin-top: -35px;
+}
+
+
+/*
+ ------------------------------------------------------
+ ---------DiseÃ±o de la pagina de bibliotecas ----------
+ ------------------------------------------------------
+*/
+
+#posicion {
+	margin-left: 16%;
+	margin-top: 18px;
+	width: 84%;
+    height: 100%;
+	padding: 20px;
+	background: #dee1e3;
+}
+
+#barra-desplagable-biblio{
+	width: 25%;
+}
+
+
+/*
+ ------------------------------------------------------
+ ---------DiseÃ±o de la pagina de politicas-------------
+ ------------------------------------------------------
+*/
+
+#tex-politicas {
+	margin-top: 40px;
+}
+
+.sub-politicas {
+	font-weight: bold;
+}
+
+.titulo-politicas {
+	text-align: center;
+	margin-bottom: -30px;
+}
+
+#contenido-politicas {
+	margin-left: 16%;
+	margin-top: 60px;
+	position: absolute;
+	padding: 50px;
+	background: #fff;
+}
+
+
+/*
+ ------------------------------------------------------
+ ---------DiseÃ±o de la pagina de index footer----------
+ ------------------------------------------------------
+*/
+
+#logo-sena-portada {
+	width: 30%;
+	margin-left: 13%;
+}
+
+
+/*
+ ------------------------------------------------------
+ -----------contenedor-grupos barra derecha------------
+ ------------------------------------------------------
+ */
+
+#contenedor-grupos {
+	width: 16%;
+	height: 91%;
+	/*	float: right;*/
+	/*	margin-left: 1134px;*/
+	margin-left: 1416px;
+	/* esta propiedad esta pendiende*/
+	margin-top: 60px;
+	position: fixed;
+	background: #01A6BD;
+	padding: 10px;
+
+}
+
+#usuarios-titulo {
+	text-align: center;
+	color: white;
+	font-style: italic;
+}
+
+.usuarios-barra-derecha {
+	background: #fff;
+	height: 94%;
+	width: 100%;
+	overflow: scroll;
+
+}
+
+.usuarios-barra-derecha p img {
+	border-radius: 50%;
+	width: 35px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 1px;
+
+}
+
+.usuarios-barra-derecha p {
+	margin-left: 20px;
+	margin-top: 21px;
+	font-weight: bold;
+	font-size: 16px
+}
+
+
+/*
+ ------------------------------------------------------
+ ------DiseÃ±o de la pagina del formulario de login-----
+ ------------------------------------------------------
+*/
+
+#login {
+	width: 350px;
+	background: #fff;
+	height: 290px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+#Ajustes {
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 5%;
+	background: #fff;
+
+}
+
+#envios {
+	margin-left: 10%;
+	width: 400px;
+    height: 50px;
+	background: #fff;
+	margin: auto;
+	margin-left: -45px;
+}
+
+#l1 {
+	text-align: center;
+    
+}
+
+#l2 {
+	text-align: center;
+}
+
+#lf {
+	margin-left: 45%;
+	width: 44px;
+	height: 44px;
+}
+
+
+#ventana-modal-index{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility:hidden;
+    position: fixed;
+    z-index: 3;
+    background: #00000047;
+   
+}
+
+#ventana-modal-index2{
+    background: #fff;
+    width: 50%;
+    height: auto;
+    position: relative;
+    margin: auto;
+   
+    
+    
+   
+}

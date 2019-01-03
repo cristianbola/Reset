@@ -1,0 +1,1 @@
+[15-Dec-2017 06:38:34 UTC] PHP Fatal error:  Call to undefined method getAdmin::logSesionss() in /home/ed860925/public_html/reset/admin/info-sesion.php on line 36
